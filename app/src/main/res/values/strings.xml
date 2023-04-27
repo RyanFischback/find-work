@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Quick Cash</string>
+    <string name="EMPTY_STRING"></string>
+    <string name="menu_account_settings">Account Settings</string>
+    <string name="menu_jobs">Jobs</string>
+    <string name="menu_jobs_add">Add New Job</string>
+    <string name="menu_home">Home</string>
+    <string name="nav_header_title">Quick Cash</string>
+    <string name="nav_header_desc">Please use the buttons below to navigate through our Quick Cash App</string>
+    <string name="nav_header_subtitle">Group 11</string>
+</resources>

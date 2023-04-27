@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/jobNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Name: " />
+
+    <EditText
+        android:id="@+id/jobName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right|center_horizontal"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:editable="false"/>
+    <TextView
+        android:id="@+id/jobDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Description:" />
+
+    <EditText
+        android:id="@+id/jobDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right|center_horizontal"
+        android:imeOptions="actionNext"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:editable="false"/>
+
+    <TextView
+        android:id="@+id/jobStatusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Status:" />
+
+    <EditText
+        android:id="@+id/jobStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right|center_horizontal"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:editable="false"/>
+
+    <TextView
+        android:id="@+id/jobPaymentAmountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Pay:" />
+
+    <EditText
+        android:id="@+id/jobPaymentAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right|center_horizontal"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:editable="false"/>
+
+    <TextView
+        android:id="@+id/jobOwnerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Owner:" />
+
+    <EditText
+        android:id="@+id/jobOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right|center_horizontal"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:editable="false"/>
+
+
+    <TextView
+        android:id="@+id/jobEmployeeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Employee:" />
+
+    <EditText
+        android:id="@+id/jobEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right|center_horizontal"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:editable="false"/>
+
+</LinearLayout>

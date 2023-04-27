@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:textAlignment="center">
+
+    <TextView
+        android:id="@+id/payJobNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Title:" />
+
+    <EditText
+        android:id="@+id/payJobName"
+        android:layout_width="410dp"
+        android:layout_height="61dp"
+        android:minHeight="48dp"
+        android:editable="false"/>
+
+    <TextView
+        android:id="@+id/payJobDescLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Description:" />
+
+    <EditText
+        android:id="@+id/payJobDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:minHeight="48dp"
+        android:editable="false"/>
+
+    <TextView
+        android:id="@+id/payJobStatusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Status:" />
+
+    <EditText
+        android:id="@+id/payJobStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:minHeight="48dp"
+        android:editable="false"/>
+
+    <TextView
+        android:id="@+id/payJobPayLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Pay:" />
+
+    <EditText
+        android:id="@+id/payJobPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:minHeight="48dp"
+        android:editable="false"/>
+
+    <TextView
+        android:id="@+id/payEmployeeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Employee:" />
+
+    <EditText
+        android:id="@+id/payEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:minHeight="48dp"
+        android:editable="false"/>
+
+</LinearLayout>

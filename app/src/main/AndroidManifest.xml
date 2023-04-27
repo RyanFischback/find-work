@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.quickcash">
+
+    <!--
+         The FINE_LOCATION permission relates to the foreground service and will be present to the user
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuickCash">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="true"
+            android:label="Maps Activity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".employees.EmployeeMainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.QuickCash.NoActionBar" />
+        <activity
+            android:name=".employees.EmployeeAccountActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".employees.EmployeeJobsActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".employees.EmployeeSearchActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".employers.EmployerMainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.QuickCash.NoActionBar" />
+        <activity
+            android:name=".employers.EmployerJobsActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".employees.EmployeeOptions"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".employers.EmployerAccountActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".employers.EmployerOptions"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".employers.EmployerPosted"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".employees.EmployeeJobsList"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".employees.EmployeeNotificationActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".employees.EmployeeTakenJobsList"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".employees.EmployeeJobsListMap"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".employers.EmployerNotificationActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".employees.EmployeeEditProfile"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".employers.EmployerEditProfile"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".employers.EmployerCompleted"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_name"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/existingJobNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Title:" />
+
+    <EditText
+        android:id="@+id/existingJobName"
+        android:layout_width="410dp"
+        android:layout_height="61dp"
+        android:hint="Edit Job Name"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/existingJobDescLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Description:" />
+
+    <EditText
+        android:id="@+id/existingJobDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/existingJobName"
+        android:layout_marginTop="29dp"
+        android:hint="Edit Job Description"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/existingJobPayLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Pay:" />
+
+    <EditText
+        android:id="@+id/existingJobPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/existingJobDesc"
+        android:layout_marginTop="29dp"
+        android:hint="Edit Job Payment"
+        android:minHeight="48dp"
+        android:inputType="numberSigned"/>
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation">
+
+        <include
+            layout="@layout/user_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/employer_option_home"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:text="Home"
+            app:srcCompat="@drawable/ic_home" />
+
+        <ImageButton
+            android:id="@+id/employer_options"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/ic_other" />
+
+        <ImageButton
+            android:id="@+id/employer_option_setting"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="250dp"
+            app:srcCompat="@drawable/ic_setting" />
+
+        <ImageButton
+            android:id="@+id/employer_option_search"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="400dp"
+            android:text="Home"
+            app:srcCompat="@drawable/ic_search" />
+
+        <ImageButton
+            android:id="@+id/employer_option_jobs"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="250dp"
+            app:srcCompat="@drawable/ic_jobs" />
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/design_default_color_primary"
+        app:itemIconTint="#fff"
+        app:itemTextColor="#fff"
+        app:menu="@menu/nav_items"/>
+
+
+</RelativeLayout>
